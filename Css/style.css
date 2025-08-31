@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+/**
+*
+* Testing
+*
+**/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: #fff7f0;
+  border-left: 0 solid #ffffff;
+  border-right: 0 solid #ffffff;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #000;
+}
+
+::selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #000;
+}
+
+/* end variables */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*small*/
+  /* tablet */
+  /* Medium */
+  /* desktop  */
+}
+@media (min-width: 577px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*! start variables*/
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  background-color: #fff7f0;
+}
+
+.main .call-me .bg-call .call-btn, .main .my-work .arrows .arrow, .main .about-me .container .text-about-me .about-btn, .main header nav .intro-btn,
+.main footer nav .intro-btn {
+  border: none;
+  outline-style: none;
+  height: 3.5rem;
+  width: 230px;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  border-radius: 50px;
+  background-color: #000;
+  cursor: pointer;
+}
+.main .call-me .bg-call .call-btn a, .main .my-work .arrows .arrow a, .main .about-me .container .text-about-me .about-btn a, .main header nav .intro-btn a,
+.main footer nav .intro-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.main .call-me .bg-call .call-btn:hover, .main .my-work .arrows .arrow:hover, .main .about-me .container .text-about-me .about-btn:hover, .main header nav .intro-btn:hover,
+.main footer nav .intro-btn:hover, .main .call-me .bg-call .call-btn:active, .main .my-work .arrows .arrow:active, .main .about-me .container .text-about-me .about-btn:active, .main header nav .intro-btn:active,
+.main footer nav .intro-btn:active {
+  background-color: #755cde;
+  transform: scale(0.98);
+}
+@media (max-width: 480px) {
+  .main .call-me .bg-call .call-btn, .main .my-work .arrows .arrow, .main .about-me .container .text-about-me .about-btn, .main header nav .intro-btn,
+  .main footer nav .intro-btn {
+    width: 200px;
+  }
+}
+
+/*! end Global Rules*/
+/*! start code */
+.main {
+  margin: 1.25rem auto;
+  /*! start header*/
+  /*! start middle*/
+  /*! start about-me*/
+  /*! start my-work*/
+  /*! start call-me*/
+  /*! start Attribution */
+}
+.main header nav,
+.main footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main header nav img,
+.main footer nav img {
+  width: auto;
+}
+.main .middle {
+  display: block;
+  text-align: center;
+  margin: 4rem auto;
+}
+.main .middle .text h2 {
+  font-size: 3.35rem;
+  letter-spacing: 0.08rem;
+}
+.main .middle .text p {
+  font-size: 1.128rem;
+  margin: 1.1rem auto;
+  line-height: 1.65rem;
+  color: #7a746e;
+  max-width: 74%;
+}
+.main .middle .categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 1.48rem;
+  gap: 1.48rem;
+  margin-top: 4rem;
+}
+.main .middle .categories .category {
+  padding: 1.25rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main .middle .categories .category .description {
+  color: #ffffff;
+  font-size: 1.128rem;
+  margin-right: auto;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.main .middle .categories .category:nth-child(2) .description {
+  text-transform: uppercase;
+}
+.main .middle .categories .graphic-design {
+  grid-area: 1/1/3/3;
+  background-color: #755cde;
+}
+.main .middle .categories .ui-ux {
+  grid-area: 1/3/2/4;
+  background-color: #f6a560;
+}
+.main .middle .categories .apps {
+  grid-area: 1/4/2/5;
+  background-color: #f39e9e;
+}
+.main .middle .categories .illustrations {
+  grid-area: 2/3/3/5;
+  background-color: #eb7565;
+}
+.main .middle .categories .photography {
+  grid-area: 1/5/2/7;
+  background-color: #61c4b7;
+}
+.main .middle .categories .motion-graphics {
+  grid-area: 2/5/3/7;
+  background-color: #552049;
+}
+@media (max-width: 999px) {
+  .main .middle .categories {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+  .main .middle .categories .graphic-design {
+    grid-area: 1/1/3/3;
+  }
+  .main .middle .categories .ui-ux {
+    grid-area: 1/3/2/4;
+  }
+  .main .middle .categories .apps {
+    grid-area: 1/4/2/5;
+  }
+  .main .middle .categories .illustrations {
+    grid-area: 2/3/3/5;
+  }
+  .main .middle .categories .photography {
+    grid-area: 3/1/4/3;
+  }
+  .main .middle .categories .motion-graphics {
+    grid-area: 3/3/4/5;
+  }
+}
+@media (max-width: 768px) {
+  .main .middle .categories {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 150px);
+  }
+  .main .middle .categories .graphic-design {
+    grid-area: 1/1/3/3;
+  }
+  .main .middle .categories .ui-ux {
+    grid-area: 3/1/4/2;
+  }
+  .main .middle .categories .apps {
+    grid-area: 3/2/4/3;
+  }
+  .main .middle .categories .illustrations {
+    grid-area: 4/1/5/3;
+  }
+  .main .middle .categories .photography {
+    grid-area: 5/1/6/3;
+  }
+  .main .middle .categories .motion-graphics {
+    grid-area: 6/1/7/3;
+  }
+}
+.main .about-me {
+  margin: 6rem auto;
+}
+.main .about-me .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+.main .about-me .container img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.main .about-me .container .text-about-me {
+  max-width: 50%;
+}
+.main .about-me .container .text-about-me h2 {
+  line-height: 3rem;
+  font-size: 2em;
+  font-weight: 700;
+}
+.main .about-me .container .text-about-me p {
+  margin: 1.25rem auto;
+  color: #7a746e;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.main .about-me .container .text-about-me .about-btn {
+  background-color: #eb7565;
+}
+.main .about-me .container .text-about-me .about-btn:hover, .main .about-me .container .text-about-me .about-btn:active {
+  background-color: #f6a560;
+}
+@media (max-width: 768px) {
+  .main .about-me .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .main .about-me .container img {
+    max-width: 280px;
+  }
+  .main .about-me .container .text-about-me {
+    max-width: 80%;
+  }
+  .main .about-me .container .text-about-me h2 {
+    line-height: 2.2rem;
+    font-size: 1.5em;
+  }
+}
+.main .my-work {
+  text-align: center;
+  overflow: hidden;
+  /*! external css: flickity.css */
+}
+.main .my-work h1 {
+  margin-bottom: 2.875rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.main .my-work .main-carousel {
+  height: 100%;
+  width: 100%;
+}
+.main .my-work .main-carousel .flickity-viewport {
+  overflow: initial;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.main .my-work .main-carousel .carousel-cell {
+  list-style-type: none;
+  margin: auto 1rem;
+}
+.main .my-work .main-carousel .carousel-cell img {
+  border-radius: 10px;
+  height: 360px;
+  max-width: 540px;
+}
+.main .my-work .arrows {
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.main .my-work .arrows .arrow {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+}
+.main .my-work .arrows .arrow img {
+  width: 22%;
+}
+@media (max-width: 992px) {
+  .main .my-work .main-carousel .flickity-viewport {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .main .my-work .main-carousel .flickity-viewport {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .main .my-work .main-carousel .carousel-cell img {
+    height: 180px;
+    max-width: 270px;
+  }
+  .main .my-work .arrows .arrow {
+    height: 4rem;
+    width: 4rem;
+  }
+  .main .my-work .arrows .arrow img {
+    width: 20%;
+  }
+}
+@media (max-width: 480px) {
+  .main .my-work .main-carousel .flickity-viewport {
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+}
+.main .call-me {
+  margin: 4rem auto;
+}
+.main .call-me .bg-call {
+  background-color: #000;
+  border-radius: 8px;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .call-me .bg-call .text-call-me {
+  color: #ffffff;
+  max-width: 60%;
+}
+.main .call-me .bg-call .text-call-me h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.main .call-me .bg-call .text-call-me p {
+  line-height: 1.6rem;
+  margin: 2rem auto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.main .call-me .bg-call .call-btn {
+  background-color: #eb7565;
+}
+.main .call-me .bg-call .call-btn:hover, .main .call-me .bg-call .call-btn:active {
+  background-color: #f6a560;
+}
+@media (max-width: 768px) {
+  .main .call-me .bg-call {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+  }
+  .main .call-me .bg-call .text-call-me {
+    max-width: fit-content;
+  }
+}
+.main .attribution {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 40px 0 10px 0;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+.main .attribution a {
+  font-size: smaller;
+  text-decoration: none;
+  color: #7a746e;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.main .attribution a:hover::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f0a9";
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+/*! end code *//*# sourceMappingURL=style.css.map */
