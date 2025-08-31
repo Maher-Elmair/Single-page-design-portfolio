@@ -10,7 +10,7 @@ This project is a solution to the [Frontend Mentor Single-page design portfolio 
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View  
-![Desktop Preview](/screencapture-age-calculator-app.png)
+![Desktop Preview](/screencapture-Single-page-design-portfolio.png)
 
 ### 📱 Mobile View  
 ![Mobile Preview](/screencapture-Single-page-design-portfolio-phone.png)
